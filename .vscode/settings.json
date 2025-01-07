@@ -1,0 +1,11 @@
+{
+  "editor.fontSize": 22.5,
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "code-runner.executorMap": {
+    "go": "cd $dir && go build -o $fileNameWithoutExt.exe $fileName && timeout 15s $dir$fileNameWithoutExt.exe < input.txt > output.txt || (echo -n > output.txt && echo 'Time Limit Gone')"
+  }
+}
